@@ -1,1 +1,7 @@
-<h1>hello</h1>
+<h3>Create a new quiz</h3>
+<form {{action 'createQuiz' on='submit'}}>
+  {{input
+    placeholder='New Quiz Name'
+    value=newQuiz.title}}
+    <button type="submit">Save</button>
+</form>

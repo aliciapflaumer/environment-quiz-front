@@ -7,7 +7,9 @@ export default Ember.Component.extend({
   },
   actions: {
     createQuiz() {
-      console.log(this.get('newQuiz'));
+      // console.log(this.get('newQuiz'));
+      this.sendAction('createQuiz', this.get('newQuiz'));
+      this.set('newQuiz.title', null);
     }
   }
 });

@@ -1,10 +1,13 @@
 <h3 class="quiz-header" {{action 'toggleQuizDetail'}}>{{quiz.title}}</h3>
 
-{{question-list/question-form}}
+{{question-list/question-form createQuestion='createQuestion'}}
 
 <ul>
   {{#each quiz.questions as |question|}}
-    {{shopping-list/question
-      question=question}}
+    {{question-list/question
+      question=question
+      toggleQuestionDone='toggleQuestionDone'
+      deleteQuestion='deleteQuestion'
+    }}
   {{/each}}
 </ul>

@@ -8,7 +8,8 @@ export default Ember.Component.extend({
   actions: {
     createQuestion() {
       // console.log('submitted');
-      console.log(this.get('newQuestion'));
+      // console.log(this.get('newQuestion'));
+      return this.sendAction('createQuestion', this.get('newQuestion'));
     }
   }
 });

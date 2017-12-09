@@ -1,5 +1,7 @@
 <h4>Quizzes</h4>
 
+{{quiz-form}}
+
 <ul>
 {{#each model as |quiz|}}
   <li>{{#link-to 'quiz' quiz}} {{quiz.title}} {{/link-to}}</li>

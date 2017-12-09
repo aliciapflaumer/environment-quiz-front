@@ -1,6 +1,9 @@
 <h3>Create new question</h3>
 
 <form {{action 'createQuestion' on='submit'}}>
-  {{input placeholder='New question'}}
+  {{input
+    placeholder='New question'
+    value='newQuestion.content'
+  }}
   <button type="submit">Save</button>
 </form>

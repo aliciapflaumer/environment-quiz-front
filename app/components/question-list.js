@@ -6,6 +6,7 @@ export default Ember.Component.extend({
   quizDetailHidden: false,
   actions: {
     createQuestion(question) {
+      question.quiz = this.get('quiz');
       return this.sendAction('createQuestion', question);
     }
   },

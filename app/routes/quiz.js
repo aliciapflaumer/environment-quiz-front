@@ -10,7 +10,9 @@ export default Ember.Route.extend({
       question.save();
     },
     createQuestion(question) {
-      console.log(question);
+      // console.log('this is question', question);
+      let newQuestion = this.get('store').createRecord('question', question);
+      newQuestion.save();
     }
   }
 });

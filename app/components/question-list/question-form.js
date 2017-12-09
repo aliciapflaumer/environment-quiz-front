@@ -9,7 +9,8 @@ export default Ember.Component.extend({
     createQuestion() {
       // console.log('submitted');
       // console.log(this.get('newQuestion'));
-      return this.sendAction('createQuestion', this.get('newQuestion'));
+      this.sendAction('createQuestion', this.get('newQuestion'));
+      return this.set('newQuestion.content', null);
     }
   }
 });

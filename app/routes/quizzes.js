@@ -4,11 +4,11 @@ export default Ember.Route.extend({
   model () {
      return this.get('store').findAll('quiz');
    },
-   // actions: {
-   //   createQuiz(quiz) {
-   //     let newQuiz = this.get('store').createRecord('quiz', quiz);
-   //     newQuiz.save();
-   //   },
+   actions: {
+     createQuiz(quiz) {
+       let newQuiz = this.get('store').createRecord('quiz', quiz);
+       newQuiz.save();
+     }
    //   deleteQuiz(quiz) {
    //     quiz.destroyRecord();
    //   },
@@ -17,5 +17,5 @@ export default Ember.Route.extend({
    //     console.log(title);
    //     quiz.set('title', title)
    //   }
-   // }
+   }
 });

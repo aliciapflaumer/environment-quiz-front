@@ -4,6 +4,9 @@
 
 <ul>
 {{#each model as |quiz|}}
-  <li>{{#link-to 'quiz' quiz}} {{quiz.title}} {{/link-to}}</li>
+  <li>
+    {{#link-to 'quiz' quiz}} {{quiz.title}} {{/link-to}}
+    <button {{action 'deleteQuiz'}}>Delete Quiz</button>
+  </li>
 {{/each}}
 </ul>

@@ -8,10 +8,10 @@ export default Ember.Route.extend({
      createQuiz(quiz) {
        let newQuiz = this.get('store').createRecord('quiz', quiz);
        newQuiz.save();
+     },
+     deleteQuiz(quiz) {
+       quiz.destroyRecord();
      }
-   //   deleteQuiz(quiz) {
-   //     quiz.destroyRecord();
-   //   },
    //   updateQuiz(quiz, title) {
    //     console.log(quiz);
    //     console.log(title);

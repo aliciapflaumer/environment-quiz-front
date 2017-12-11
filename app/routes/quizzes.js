@@ -13,8 +13,6 @@ export default Ember.Route.extend({
        quiz.destroyRecord();
      }
    //   updateQuiz(quiz, title) {
-   //     console.log(quiz);
-   //     console.log(title);
    //     quiz.set('title', title)
    //   }
    }

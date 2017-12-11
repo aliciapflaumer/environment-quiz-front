@@ -5,10 +5,10 @@ export default Ember.Route.extend({
      return this.get('store').findAll('quiz');
    },
    actions: {
-     createQuiz(quiz) {
-       let newQuiz = this.get('store').createRecord('quiz', quiz);
-       newQuiz.save();
-     },
+     // createQuiz(quiz) {
+     //   let newQuiz = this.get('store').createRecord('quiz', quiz);
+     //   newQuiz.save();
+     // },
      deleteQuiz(quiz) {
        quiz.destroyRecord();
      }

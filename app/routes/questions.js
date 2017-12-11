@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model () {
+  model (params) {
      return this.get('store').findRecord('question', params.question_id);
    },
    actions: {
@@ -13,7 +13,7 @@ export default Ember.Route.extend({
        question.set('answer4', newQuestion.answer4);
        question.set('correct', newQuestion.correct);
        question.set('points', newQuestion.points);
-       question.save()
+       question.save();
      }
   }
 });

@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-export default Ember.Component.extend({
+export default Ember.Route.extend({
   newQuestion: {
     content: null,
     done: false

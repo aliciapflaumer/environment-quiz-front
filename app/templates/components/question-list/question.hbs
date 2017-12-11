@@ -1,0 +1,33 @@
+<h3>Create question</h3>
+
+<form {{action 'createQuestion' on='submit'}}>
+  <p>Question title: {{input
+    placeholder='New question title'
+    value=newQuestion.content
+  }}</p>
+  <p>Answer 1 {{input
+    placeholder='Answer 1'
+    value=newQuestionAnswer1.content
+  }}</p>
+  <p>Answer 2 {{input
+    placeholder='Answer 2'
+    value=newQuestionAnswer2.content
+  }}</p>
+  <p>Answer 3 {{input
+    placeholder='Answer 3'
+    value=newQuestionAnswer3.content
+  }}</p>
+  <p>Answer 4 {{input
+    placeholder='Answer 4'
+    value=newQuestionAnswer4.content
+  }}</p>
+  <p>Correct {{input
+    placeholder='Correct answer'
+    value=newQuestionCorrect.content
+  }}</p>
+  <p>Points {{input
+    placeholder='Points'
+    value=newQuestionPoints.content
+  }}</p>
+  <button type="submit">Save</button>
+</form>

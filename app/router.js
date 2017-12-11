@@ -14,6 +14,7 @@ Router.map(function () {
   this.route('quiz', { path: '/quizzes/:quiz_id' });
   // this.route('questions');
   this.route('questions', { path: '/questions/:question_id' });
+  this.route('create-quiz');
 });
 
 export default Router;

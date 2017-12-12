@@ -13,6 +13,7 @@ Router.map(function () {
   this.route('quizzes');
   this.route('quiz', { path: '/quizzes/:quiz_id' });
   this.route('create-quiz');
+  this.route('question', { path: '/question/:question_id'});
 });
 
 export default Router;

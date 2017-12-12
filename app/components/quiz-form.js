@@ -1,10 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  newQuiz: {
-    // title: null,
-    // hidden: false
-  },
+  newQuiz: {},
   actions: {
     createQuiz() {
       // console.log(this.get('newQuiz'));

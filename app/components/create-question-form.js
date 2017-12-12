@@ -13,8 +13,8 @@ export default Ember.Route.extend({
   },
   actions: {
     createQuestion() {
-      // console.log('submitted');
-      // console.log(this.get('newQuestion'));
+      console.log('submitted');
+      console.log(this.get('newQuestion'));
       this.set('newQuestion.quiz_id', this.get('quiz'));
       this.sendAction('createQuestion', this.get('newQuestion'));
       this.set('newQuestion.title', null);

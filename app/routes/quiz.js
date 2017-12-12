@@ -2,13 +2,17 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   // flashMessages: Ember.inject.service(),
+  auth: Ember.inject.service(),
   user_id: Ember.computed.alias('auth.credentials.id'),
   model(params){
-    return this.get('store').findRecord('quiz', params.quiz_id);
+    return Ember.RSVP.hash({
+      quiz: this.get('store').findRecord('quiz', params.quiz_id),
+      user: this.get('store').findRecord('user', params.user_id),
+    });
   },
   actions: {
     createQuestion(question) {
-      // const id = question.quiz_id;
+      // const id = questison.quiz_id;
       let newQuestion = this.get('store').createRecord('question', question);
       newQuestion.save();
       // .then(() => this.transitionTo('quizzes'))

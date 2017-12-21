@@ -11,9 +11,6 @@ Router.map(function () {
   this.route('change-password');
   this.route('users');
   this.route('quizzes');
-  this.route('quiz', { path: '/quizzes/:quiz_id' });
-  this.route('create-quiz');
-  this.route('question', { path: '/question/:question_id'});
 });
 
 export default Router;

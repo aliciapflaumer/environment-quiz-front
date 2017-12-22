@@ -1,2 +1,18 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
+@import 'color';
+@import 'font';
+
+body {
+  background-color: $background;
+  color: $body-text;
+}
+
+.header, body {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.content {
+  border: 1px dashed $border;
+  border-radius: 5px;
+}

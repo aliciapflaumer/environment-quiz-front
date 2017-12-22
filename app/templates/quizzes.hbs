@@ -1,13 +1,14 @@
 <h2>Quizzes</h2>
 
-<p>{{#link-to 'create-quiz'}}<b>Create a quiz</b>{{/link-to}}
-or edit a quiz below.</p>
 
 <ul>
-{{#each model as |quiz|}}
   <li>
-    {{#link-to 'quiz' quiz}} {{quiz.title}} {{/link-to}}
-    <button {{action 'deleteQuiz' quiz}}>Delete Quiz</button>
+    Pollution
   </li>
-{{/each}}
+  <li>
+    Energy
+  </li>
+  <li>
+    Ocean
+  </li>
 </ul>

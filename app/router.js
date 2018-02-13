@@ -15,6 +15,7 @@ Router.map(function () {
       this.route('results');
     });
   });
+  this.route('quiz');
 });
 
 export default Router;

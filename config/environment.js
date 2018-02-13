@@ -52,6 +52,8 @@ module.exports = function (environment) {
     ENV.locationType = 'hash';
     ENV.rootURL = '/environment-quiz-front/';
     ENV.locationType = 'hash';
+    ENV.rootURL = '/environment-quiz-front/';
+    ENV.locationType = 'hash';
   }
 
   return ENV;

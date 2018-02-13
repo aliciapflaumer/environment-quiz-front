@@ -1,13 +1,25 @@
 <h2>All Quizzes</h2>
 
-<ul>
-    <li>
-      Pollution
-    </li>
-    <li>
-      Energy
-    </li>
-    <li>
-      Ocean
-    </li>
-</ul>
+<table class="tQuiz">
+  <thead>
+    <tr>
+      <td>Category</td>
+      <td>Quiz Title</td>
+      <td>Created by</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pollution</td>
+      <td>How much do you know about pollution?</td>
+      <td>Alicia</td>
+    </tr>
+    <tr>
+      <td>Energy</td>
+      <td>How much do you know about energy conservation?</td>
+      <td>Alicia</td>
+    </tr>
+  </tbody>
+</table>
+
+{{#link-to 'quiz'}}<button class="createQuizBtn">Create new quiz</button>{{/link-to}}

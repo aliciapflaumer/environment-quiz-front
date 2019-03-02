@@ -9,5 +9,5 @@ export default DS.Model.extend({
   correct: DS.attr('number'),
   points: DS.attr('number'),
   quiz_id: DS.attr('number'),
-  quiz: DS.attr()
+  quiz: DS.belongsTo('quiz')
 });

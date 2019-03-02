@@ -10,11 +10,7 @@ Router.map(function () {
   this.route('sign-in');
   this.route('change-password');
   this.route('users');
-  this.route('quizzes', function() {
-    this.route('quiz', { path: ':quiz_id' }, function() {
-      this.route('results');
-    });
-  });
+  this.route('quizzes');
   this.route('quiz');
 });
 
